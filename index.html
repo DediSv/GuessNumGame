@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess</title>
+    <link rel="stylesheet" href="styles/maincss.css">
+</head>
+<body>
+    <div id="top"><p>Guess A NUMBER</p></div>
+    <div class="middle hidden toggleHi">
+        <div id="submain">
+            <label for="guess">Write a number</label> <br>
+            <input type="text"
+                   id="guess" onkeydown="guessJS(event)">
+        </div>
+        <div id="main" class="js-diff"></div>
+    </div>
+    <div class="status"></div>
+    <div id="rules">Rules
+    <div id="list">*Choose the difficulty,<br>guess a number:)</div>
+    </div>
+    <div id="diff">Difficulty
+        <br>
+        <button onclick= "addclass(this); difficultyJS('ez')" class="ez button">Easy</button>
+        <br>
+        <button onclick= "addclass(this); difficultyJS('norm')" class="norm button">Normal</button>
+        <br>
+        <button onclick= "addclass(this); difficultyJS('hard')" class="hard button">Hard</button>
+    </div>
+    <div id="triesJS" class="hidden tries">Tries</div>
+    <div id="pict"><img src="styles/images/StartGif.gif" alt="Chech the internet connection."></div>
+    <script src="scripts/mainscript.js"></script>
+</body>
+</html>
